@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Thursday Pattu</title>
+
+<style>
+body{
+    font-family: Arial;
+    background: linear-gradient(to right,#ffd1dc,#ffe6f0);
+    text-align:center;
+    margin-top:150px;
+}
+
+.card{
+    background:white;
+    padding:40px;
+    border-radius:10px;
+    width:400px;
+    margin:auto;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    margin:10px;
+    cursor:pointer;
+}
+
+#yes{
+    background:#ff4d6d;
+    color:white;
+}
+
+#no{
+    background:#ddd;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Love Music -->
+<audio autoplay loop>
+  <source src="EthirNeechal.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+<h2>Pradee,<br>Will you join with me a daily workouts? 💖</h2>
+
+<button id="yes" onclick="yesClicked()">YES</button>
+<button id="no" onmouseover="moveButton()">No</button>
+
+</div>
+
+<script>
+
+function yesClicked(){
+    alert("Yay! Love you pattu 🐼");
+}
+
+function moveButton(){
+
+    var button = document.getElementById("no");
+
+    var x = Math.random() * 300;
+    var y = Math.random() * 200;
+
+    button.style.position = "absolute";
+    button.style.left = x + "px";
+    button.style.top = y + "px";
+}
+
+</script>
+
+</body>
+</html>
